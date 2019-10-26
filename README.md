@@ -8,8 +8,9 @@ E' inoltre possibile settare la stringa di partenza, nel caso in cui non venga s
 Infine è possibile impostare il tempo tra una chiamata e l'altra al sito web per evitare di essere bloccati, non e' necessario in molti siti, 
 infatti di default e' nullo.
 
+---------------------------------------------------------
+E' infine possibile chiamare ogni scansione facendola partire su un thread a parte, cosi da poter fare più scansioni contemporanemanete.
+
 ----------------------------------------------------------
 L'output di ogni scansione sara' un file html salvato in './output/{nomesito}.html'. La sua formattazione può essere un minimo decisa specificando dei parametri.
 -----------------------------------------------------------
-E' infine possibile chiamare ogni scansione facendola partire su un thread a parte, cosi da poter fare più scansioni contemporanemanete.
-
