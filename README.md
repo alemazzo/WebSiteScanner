@@ -12,5 +12,5 @@ infatti di default e' nullo.
 E' infine possibile chiamare ogni scansione facendola partire su un thread a parte, cosi da poter fare più scansioni contemporanemanete.
 
 ----------------------------------------------------------
-L'output di ogni scansione sara' un file html salvato in './output/{nomesito}.html'. La sua formattazione può essere un minimo decisa specificando dei parametri.
+L'output di ogni scansione sara' un file html salvato nel seguente modo : './output/{nomesito}.html'. La sua formattazione può essere un minimo decisa specificando dei parametri.
 -----------------------------------------------------------
