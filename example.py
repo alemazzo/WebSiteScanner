@@ -1,8 +1,5 @@
 from SiteScanner.Scanner import SiteScanner, websites
 
-
-
-
 justpaste = websites['justpaste']
 instagram = websites['instagram']
 ibb = websites['ibb']
@@ -16,3 +13,4 @@ SiteScanner.handle_termination([
     instagram,
     ibb,
 ])
+
