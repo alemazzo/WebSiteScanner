@@ -4,6 +4,8 @@ Scanner di siti web alla ricerca di un determinato pattern.
 
 Scansione sito web basandosi sulla prima parte dell' url che verrà concatenato ad un pezzo finale di una lunghezza specificata dall' utente, al fine di trovare una pagina funzionante nella quale cercare un determinato elemento basandoci su un pattern.
 
+Ad esempio possiamo scansionare i post di Instagram concatenando l url 'instagram.com/p/' ad una stringa finale andando alla ricerca del link diretto all'interno dell' HTML, delle immagini condivise dalla gente.
+
 La stringa generata ha un suo alfabeto che l'utente deve specificare ed esse consiste nell'insieme di tutti i caratteri che può assumere.
 
 E' inoltre possibile settare la stringa di partenza, nel caso in cui non venga specificata verrà settata randomicamente.
