@@ -28,6 +28,10 @@ class SiteScanner:
         self.output = None #connessione al file di output
         self.end = False
         self.log = log #Se True stampa il new_end che sta provando
+        self.str_length = str_length
+        self.str_start = str_start
+        self.rand = rand
+        self.alphabeth = alphabeth
 
 
         """
@@ -37,15 +41,7 @@ class SiteScanner:
         self.before = before
         self.after = after
 
-        """
-        Generatore di stringhe
-        """
-        self.generator = StringGenerator(
-            length = str_length, 
-            alphabeth = alphabeth, 
-            start = str_start,
-            rand = rand
-            )
+        
     
     def Terminate(self):
         self.end = True
@@ -118,6 +114,17 @@ class SiteScanner:
         funzione ritorna subito ed è possibile eseguire altri
         comandi o fare partire altre scansioni contemporaneamente.
         """
+
+        """
+        Generatore di stringhe
+        """
+        self.generator = StringGenerator(
+            length = self.str_length, 
+            alphabeth = self.alphabeth, 
+            start = self.str_start,
+            rand = self.rand
+            )
+        
         if thread == True:
             t = threading.Thread(target = self._scan_forever)
             t.start()
