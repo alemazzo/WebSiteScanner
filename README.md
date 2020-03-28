@@ -1,23 +1,13 @@
 # WebSiteScanner
-Scanner di siti web alla ricerca di un determinato pattern.
+Website's scanner searching a specified pattern
 -----------------------------------------------------------
+It's based of the first part of the URL that will be concat with a final one of a specified lenght in order to find a patter in the resulted page.
 
-Scansione sito web basandosi sulla prima parte dell' url che verrà concatenato ad un pezzo finale di una lunghezza specificata dall' utente, al fine di trovare una pagina funzionante nella quale cercare un determinato elemento basandoci su un pattern.
+For example we can scan instagram's post with the base url 'instagram.com/p/' and an alphanumeric string and then find the direct url of the photo to download the photo.
 
-Ad esempio possiamo scansionare i post di Instagram concatenando l url 'instagram.com/p/' ad una stringa finale andando alla ricerca del link diretto all'interno dell' HTML, delle immagini condivise dalla gente.
+It's possible to specify the string alphabeth and the initial string.
+It's possible to specify a delay between the requests to avoid ban.
 
-La stringa generata ha un suo alfabeto che l'utente deve specificare ed esse consiste nell'insieme di tutti i caratteri che può assumere.
-
-E' inoltre possibile settare la stringa di partenza, nel caso in cui non venga specificata verrà settata randomicamente.
-
-Infine è possibile impostare il tempo tra una chiamata e l'altra al sito web per evitare di essere bloccati, non e' necessario in molti siti, 
-infatti di default e' nullo.
-
----------------------------------------------------------
-Possiamo anche chiamare ogni scansione facendola partire su un thread a parte, cosi da poter fare più scansioni contemporanemanete.
-
-----------------------------------------------------------
-L'output di ogni scansione sara' un file html salvato nel seguente modo : './output/{nomesito}.html'.
------------------------------------------------------------
-Librerie aggiuntive richieste : ['requests']
------------------------------------------------------------
+----------------------
+The output od each scan will be an html file saved like that './output/{sitename}.html'
+----------------------
